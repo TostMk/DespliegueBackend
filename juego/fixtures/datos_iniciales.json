@@ -1,0 +1,31 @@
+[
+  {"model":"juego.usuario","pk":1,"fields":{"nombre_usuario":"aventurero1","contrasena":"demo-no-usar-en-produccion","correo":"aventurero1@example.com"}},
+  {"model":"juego.perfil","pk":1,"fields":{"usuario":1,"biografia":"Explorador del reino de prueba.","avatar":"https://example.com/avatars/aventurero1.png"}},
+
+  {"model":"juego.habilidad","pk":1,"fields":{"nombre":"Espadazo","descripcion":"Un ataque poderoso con la espada.","incremento_ataque":10,"incremento_defensa":0,"incremento_estamina":-5}},
+  {"model":"juego.habilidad","pk":2,"fields":{"nombre":"Escudo de Hierro","descripcion":"Aumenta la defensa del guerrero.","incremento_ataque":0,"incremento_defensa":15,"incremento_estamina":-3}},
+  {"model":"juego.habilidad","pk":3,"fields":{"nombre":"Flecha Arcana","descripcion":"Lanza una flecha de energía mágica.","incremento_ataque":12,"incremento_defensa":0,"incremento_estamina":-8}},
+  {"model":"juego.habilidad","pk":4,"fields":{"nombre":"Curación Menor","descripcion":"Recupera fuerzas después del combate.","incremento_ataque":0,"incremento_defensa":5,"incremento_estamina":12}},
+  {"model":"juego.habilidad","pk":5,"fields":{"nombre":"Paso Sombrío","descripcion":"Permite esquivar un ataque con rapidez.","incremento_ataque":6,"incremento_defensa":8,"incremento_estamina":5}},
+  {"model":"juego.habilidad","pk":6,"fields":{"nombre":"Golpe Sísmico","descripcion":"Un golpe pesado que sacude el terreno.","incremento_ataque":18,"incremento_defensa":-2,"incremento_estamina":-10}},
+
+  {"model":"juego.personaje","pk":1,"fields":{"perfil":1,"nombre":"Gagh-Ar","tipo":"guerrero","descripcion":"Un valiente luchador con gran fuerza física.","ataque":80,"defensa":70,"estamina":60}},
+  {"model":"juego.personaje","pk":2,"fields":{"perfil":1,"nombre":"Elyra","tipo":"maga","descripcion":"Hechicera con gran dominio de la energía mágica.","ataque":65,"defensa":40,"estamina":90}},
+  {"model":"juego.personaje","pk":3,"fields":{"perfil":1,"nombre":"Thalion","tipo":"elfo","descripcion":"Arquero élfico experto en ataques a distancia.","ataque":75,"defensa":55,"estamina":80}},
+  {"model":"juego.personaje","pk":4,"fields":{"perfil":1,"nombre":"Nyx","tipo":"asesino","descripcion":"Combatiente ágil que se mueve entre las sombras.","ataque":78,"defensa":45,"estamina":72}},
+  {"model":"juego.personaje","pk":5,"fields":{"perfil":1,"nombre":"Brom","tipo":"guerrero","descripcion":"Un defensor firme y resistente.","ataque":68,"defensa":88,"estamina":66}},
+  {"model":"juego.personaje","pk":6,"fields":{"perfil":1,"nombre":"Aeris","tipo":"maga","descripcion":"Maga viajera que domina hechizos de apoyo.","ataque":60,"defensa":50,"estamina":95}},
+
+  {"model":"juego.personajehabilidad","pk":1,"fields":{"personaje":1,"habilidad":1,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":2,"fields":{"personaje":1,"habilidad":2,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":3,"fields":{"personaje":2,"habilidad":3,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":4,"fields":{"personaje":2,"habilidad":4,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":5,"fields":{"personaje":3,"habilidad":3,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":6,"fields":{"personaje":3,"habilidad":5,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":7,"fields":{"personaje":4,"habilidad":1,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":8,"fields":{"personaje":4,"habilidad":5,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":9,"fields":{"personaje":5,"habilidad":2,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":10,"fields":{"personaje":5,"habilidad":6,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":11,"fields":{"personaje":6,"habilidad":4,"nivel":1}},
+  {"model":"juego.personajehabilidad","pk":12,"fields":{"personaje":6,"habilidad":3,"nivel":1}}
+]

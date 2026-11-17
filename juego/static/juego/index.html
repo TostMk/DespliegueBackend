@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>API de juego — autenticación</title>
+  <style>
+    body { max-width: 42rem; margin: 3rem auto; padding: 0 1rem; font: 1rem system-ui, sans-serif; }
+    label { display: block; margin: 1rem 0 .25rem; }
+    input, button { padding: .6rem; font: inherit; }
+    #status { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>API de juego</h1>
+  <form id="loginForm">
+    <label for="username">Usuario</label>
+    <input id="username" name="username" autocomplete="username" required>
+    <label for="password">Contraseña</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <p><button type="submit">Iniciar sesión</button></p>
+  </form>
+  <p>
+    <button id="loadMe" type="button">Ver mi perfil</button>
+    <button id="loadUsers" type="button">Cargar usuarios (ADMIN)</button>
+    <button id="logout" type="button">Cerrar sesión</button>
+  </p>
+  <pre id="status" role="status" aria-live="polite"></pre>
+  <ul id="userList"></ul>
+  <script src="/static/juego/login.js" defer></script>
+</body>
+</html>
